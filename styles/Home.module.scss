@@ -1,13 +1,17 @@
+@import './variables.module.scss';
+
+
 .container {
- 
+  color: $fontdark;
   .header{
     width: 100%;
-    background-color: #F6F6F7;
+    background-color: $headerbg;
     display: flex;
     justify-content: flex-end;
     padding: 10px 20vmin 10px 0;
     margin-top: 15px;
-    color: #888888;
+    color: $fontlight;
+    font-size: 12px;
   }
 
   .columncontainer{
@@ -25,10 +29,40 @@
     .row{
       width: 40%;
       padding: 50px;
+      .flex{
+        display: flex;
+        .size{
+          color: $fontlight;
+          font-size: 13px;
+          font-weight: 500;
+        }
+        .as{
+          color: $star;
+        }
+      }
+      .text{
+        color: $fontlight;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: 300;
+      }
+      hr{
+        border: .5px solid #cccccc40;
+        border-bottom: none;
+        
+      }
+      .classictee{
+        font-size: 20px;
+        margin-bottom: 30px;
+        color: $fontdark;
+       
+      }
       .buttonsize{
-        padding: 16px;
-        border: 1px solid #CCCCCC;
-        color: #CCCCCC;
+        padding: 13px;
+        border: 1px solid $borderlight;
+        color: $borderlight;
         background-color: transparent;
         font-size: 12px;
         margin-top: 10px;
@@ -36,20 +70,24 @@
         margin-right: 5px;
 
         &:hover{
-          border: 1px solid #222222;
-         color: #222222;
+          border: 1px solid $fontdark;
+         color: $fontdark;
         }
       }
 
       .addtocart{
-        border: 2px solid #222222;
-        color: #222222;
+        border: 2px solid $fontdark;
+        color: $fontdark;
         background-color: transparent;
-        font-size: 15px;
+        font-size: 16px;
         padding: 8px 20px;
         margin-top: 20px;
         font-weight: 500;
 
+        &:hover{
+          color: white;
+          background-color: $fontdark;
+        }
 
 
       }

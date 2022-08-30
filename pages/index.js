@@ -22,17 +22,20 @@ export default function Home() {
           </div>
         </div>
         <div className='row'>
-            <div className=''> Classic Tee</div>
+            <div className='classictee'> Classic Tee</div>
             <hr></hr>
             <div><b>$75.00</b></div>
             <hr></hr>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-            <div>SIZE</div>
+            <div className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+            <div className='flex'>
+              <div className='size'>SIZE</div>
+              <div className='as'>*</div>
+            </div>
+           
             <button className='buttonsize'>S</button>
             <button className='buttonsize'>M</button>
             <button className='buttonsize'>L</button> <br></br>
             <button className='addtocart'> ADD TO CART </button>
-            <button type="button" className="btn btn-primary">Primary</button>
         </div>
         
 
