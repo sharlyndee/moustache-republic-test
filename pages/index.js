@@ -114,13 +114,13 @@ export default function Home() {
           </div>
           <div className='row'>
  
-              <div className='classictee'>Classic Tee</div>
+              <div className='classictee'>{post.title}</div>
         
               
               <hr></hr>
-              <div><b>$75.00</b></div>
+              <div><b>${post.price}</b></div>
               <hr></hr>
-              <div className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+              <div className='text'>{post.description}</div>
               <div className='flex'>
                 <div className='size'>SIZE</div>
                 <div className='as'>*</div>
