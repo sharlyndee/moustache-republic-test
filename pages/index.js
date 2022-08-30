@@ -68,7 +68,7 @@ export default function Home() {
       setCart(newcart)
     }
     else{
-      alert('please select size')
+      alert('Error! Please select size!')
     }
   }
 
