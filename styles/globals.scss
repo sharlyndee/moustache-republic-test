@@ -1,5 +1,6 @@
 @use "./Home.module.scss";
-
+@use "../components/CartCard/cartcard.module.scss";
+@use "../components/Dropdown/dropdown.module.scss";
 
 @tailwind base;
 @tailwind components;

@@ -1,0 +1,24 @@
+.cardcontainer{
+    display: flex; 
+    margin: 20px;
+    margin-bottom: 30px;
+  
+    font-size: 13px;
+    .rowpic{
+        width: 30%;
+        .imagecontainer{
+
+        }
+    }
+    .rowtext{
+     
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        line-height: 30px;
+        
+        .tee{
+          
+        }
+    }
+}

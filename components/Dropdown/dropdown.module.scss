@@ -1,0 +1,81 @@
+@import '../../styles/variables.module.scss';
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: $fontlight;
+    font-size: 12px;
+    padding: 5px;
+    
+    .contentcontainer{
+        display: flex;
+      .mycart{
+
+      }
+        .cart{
+         width: 20px;
+         display: none;
+          
+        }
+    }
+  
+  }
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid $borderlight;
+    background-color: #f9f9f9;
+    right: 0;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+   
+  }
+  
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content :hover {
+
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: white;
+    border: 1px solid $borderlight;
+    border-bottom: none;
+    color: black;
+    
+  }
+  
+  
+
+  @media only screen and (max-width: 768px) {
+    .dropbtn {
+      .contentcontainer{
+          display: flex;
+      
+
+        .cart{
+          display: block;
+        
+        }
+          
+      }
+  
+  }
+  }
+  
+  
+  

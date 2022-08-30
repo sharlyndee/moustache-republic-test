@@ -10,8 +10,7 @@
     justify-content: flex-end;
     padding: 10px 20vmin 10px 0;
     margin-top: 15px;
-    color: $fontlight;
-    font-size: 12px;
+   
   }
 
   .columncontainer{
@@ -70,9 +69,16 @@
         margin-right: 5px;
 
         &:hover{
-          border: 1px solid $fontdark;
+         border: 1px solid $fontdark;
          color: $fontdark;
+        
         }
+
+       
+      }
+      .buttonclicked{
+        border: 1px solid $fontdark;
+        color: $fontdark;
       }
 
       .addtocart{
@@ -84,9 +90,11 @@
         margin-top: 20px;
         font-weight: 500;
 
+        
         &:hover{
           color: white;
           background-color: $fontdark;
+          transition: 0.2s;
         }
 
 
