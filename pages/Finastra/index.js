@@ -36,7 +36,7 @@ const Home = () => {
             })
             setData(newData)
             setDisplayData(newData)
-            console.log(newData)
+   
         }
        }, [post, course])
 
@@ -60,7 +60,6 @@ const Home = () => {
         .then(res => {
           console.log(res)
           setCourse(res.data)
-       
         })
         
         .catch (err => {
@@ -81,11 +80,10 @@ const Home = () => {
 
       const search = (searchText) => {
         var new_display_data = []
-  
         data.map(student =>{
           var has_search_text = false
           Object.values(student).forEach(val => {
-            console.log(val.toString().toLowerCase())
+         
             if(typeof val == 'string' || typeof val == 'number' ){
               var compareval  = val.toString().toLowerCase()
               if(compareval.includes(searchText)){
@@ -120,8 +118,8 @@ const Home = () => {
    
 
     return (
-      <div>
-        <input placeholder='search' onChange={(e) => setQuery(e.target.value)}></input>
+      <div className='container'>
+        <input placeholder='Search' onChange={(e) => setQuery(e.target.value)} className="search"></input>
         
         <table >
               <tr>
@@ -142,15 +140,14 @@ const Home = () => {
                 if(i == 0){
                   var dis = (
                     <tr key={student.id}>
-                    <td>{student.name} </td>
-                    <td> {student.phone} </td>
-                    <td>{student.email}</td>
-                 
-                  </tr>
+                      <td>{student.name} </td>
+                      <td> {student.phone} </td>
+                      <td>{student.email}</td>
+                     </tr>
                   )
                   display_these.push(dis)
                 }else{
-                  console.clear(student.courses[i-1])
+                 
                   var dis = (
                   <tr key={`${student.id} - ${student.courses[i-1].id}}`}>
                     <td></td>
@@ -170,17 +167,17 @@ const Home = () => {
             }else{
               return(
                 <tr key={student.id}>
-                <td>{student.name} </td>
-                <td> {student.phone} </td>
-                <td>{student.email}</td>
-                <td>no data</td>
-              </tr>
+                  <td>{student.name} </td>
+                  <td> {student.phone} </td>
+                  <td>{student.email}</td>
+                  <td>No Data</td>
+                 </tr>
               )
         
           
             }
 
-          }) : <span> no data</span>
+          }) : <div className='nodata'> No Data Matched!</div>
         }
         
          </table>

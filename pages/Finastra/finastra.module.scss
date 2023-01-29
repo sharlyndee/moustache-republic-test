@@ -1,0 +1,43 @@
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.346);
+    border-radius: 5px;
+
+   
+}
+.nodata{
+    display: flex;
+    width: 80vw;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.181);
+    justify-content: center;
+
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  td, th {
+  
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
